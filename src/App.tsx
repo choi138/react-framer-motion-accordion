@@ -1,12 +1,12 @@
-import { GlobalStyle } from "./style/GlobalStyle";
-import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
-import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Accordion from "./main/accordion";
 
 function App() {
   return (
     <>
       <Router>
         <Routes>
+          <Route index element={<Accordion />} />
         </Routes>
       </Router>
     </>
